@@ -12,6 +12,6 @@ nav a{display: inline-block;
 }
 
 @font-face {
-    font-family: Inter;
+    font-family: myFirstFont;
     src: url(https://fonts.google.com/specimen/Inter);
 }
