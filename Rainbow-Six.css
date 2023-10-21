@@ -1,0 +1,12 @@
+/** NAV BAR **/
+nav {background-color: rgb(57,57,65);
+    list-style-type: none;
+}
+
+nav ul li{display: inline-block;}
+
+nav a{display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color:white;
+}
