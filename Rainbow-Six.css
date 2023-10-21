@@ -10,3 +10,8 @@ nav a{display: inline-block;
     text-decoration: none;
     color:white;
 }
+
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+}
