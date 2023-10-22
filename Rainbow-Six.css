@@ -63,16 +63,18 @@ nav ul li{
     color: white;
 }
 
-#Instagram{
+#Instagram a{
     padding-right: 50px;
 }
 
-#Twitter{
+#Twitter a{
     padding-left: 10px;
 }
 
 #contact{
+    text-decoration: none;
     color:white;
+    font-family: R6S-Bold, sans-serif;
     padding-left: 40px;
 }
 
