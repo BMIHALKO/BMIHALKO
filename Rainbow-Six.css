@@ -1,88 +1,99 @@
+/* Styling for the header element */
 .header{
-    background-color: rgb(57,57,65);
-    overflow: hidden;
+    background-color: rgb(57,57,65); /* Background color set to a shade of gray */
+    overflow: hidden; /* Overflow is hidden, which means content exceeding the container's boundaries will be clipped */
 }
 
+/* Styling for the footer element */
 .footer{
-    background-color: rgb(57,57,65);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
+    background-color: rgb(57,57,65); /* Background color set to a shade of gray */
+    position: absolute; /* Positioning is set to absolute */
+    bottom: 0; /* Positioned at the bottom of its containing element */
+    width: 100%; /* Takes up the full width of its containing element */
+    height: 5rem; /* Height is set to 5 rem units */
 }
 
+/* Styling for the page container */
 #page-container{
-    position: relative;
-    min-height: 100vh;
+    position: relative; /* Positioning set to relative */
+    min-height: 100vh; /* Minimum height is set to 100% of the viewport height */
 }
 
+/* Styling for the content wrap */
 #content-wrap{
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; /* Adds padding to the bottom to accommodate the footer's height */
 }
 
-/** NAV BAR **/
+/* Styling for the navigation bar */
 nav {
-    padding-top: 0;
-    list-style-type: none;
+    padding-top: 0; /* Removes top padding from the nav element */
+    list-style-type: none; /* Removes the default list-style */
 }
 
+/* Styling for the list items within the navigation */
 nav ul li{
-    display: inline-block;
-    padding-right: 25px;
+    display: inline-block; /* Displays list items in a horizontal line */
+    padding-right: 25px; /* Adds right padding to separate list items */
 }
 
+/* Styling for the logo element */
 #logo{
-    padding-right: 20px;
+    padding-right: 20px; /* Adds right padding to the logo element */
 }
 
+/* Styling for links within the "operators" element */
 #operators a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: R6S-Bold,sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    border-left: 3px solid black;
-    padding-top: 29px;
-    padding-bottom: 18px;   
-    padding-left: 30px;
-    color: white;
+    text-decoration: none; /* Removes underlines from links */
+    font-size: 30px; /* Sets the font size to 30 pixels */
+    font-family: R6S-Bold,sans-serif; /* Defines the font family */
+    font-weight: bold; /* Sets the font weight to bold */
+    font-style: italic; /* Applies italic style to the font */
+    border-left: 3px solid black; /* Adds a left border to the links */
+    padding-top: 29px; /* Adds top padding */
+    padding-bottom: 18px; /* Adds bottom padding */
+    padding-left: 30px; /* Adds left padding */
+    color: white; /* Sets the text color to white */
 }
 
+/* Styling for links within the "communityPage" element */
 #communityPage a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: R6S-Bold,sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    padding-top: 29px;
-    padding-bottom: 18px;
-    padding-right: 25px;
-    padding-left: 30px;
-    color: white;
+    text-decoration: none; /* Removes underlines from links */
+    font-size: 30px; /* Sets the font size to 30 pixels */
+    font-family: R6S-Bold,sans-serif; /* Defines the font family */
+    font-weight: bold; /* Sets the font weight to bold */
+    font-style: italic; /* Applies italic style to the font */
+    border-left: 3px solid black; /* Adds a left border to the links */
+    border-right: 3px solid black; /* Adds a right border to the links */
+    padding-top: 29px; /* Adds top padding */
+    padding-bottom: 18px; /* Adds bottom padding */
+    padding-right: 25px; /* Adds right padding */
+    padding-left: 30px; /* Adds left padding */
+    color: white; /* Sets the text color to white */
 }
 
+/* Styling for links within the "Instagram" element */
 #Instagram a{
-    padding-right: 50px;
+    padding-right: 50px; /* Adds right padding to the Instagram links */
 }
 
+/* Styling for links within the "Twitter" element */
 #Twitter a{
-    padding-left: 10px;
+    padding-left: 10px; /* Adds left padding to the Twitter links */
 }
 
+/* Styling for the "contact" element */
 #contact{
-    text-decoration: none;
-    color:white;
-    font-family: R6S-Bold, sans-serif;
-    padding-left: 40px;
+    text-decoration: none; /* Removes underlines from links */
+    color: white; /* Sets the text color to white */
+    padding-left: 40px; /* Adds left padding */
 }
 
+/* Styling for links within the "gameInfo" element */
 #gameInfo a{
-    padding-left: 800px;
-    text-decoration: none;
-    color: white;
-    font-family: R6S-Bold, sans-serif;
-    font-weight: bold;
-    font-style: italic;
+    padding-left: 800px; /* Adds a significant left padding to the game info links */
+    text-decoration: none; /* Removes underlines from links */
+    color: white; /* Sets the text color to white */
+    font-family: R6S-Bold, sans-serif; /* Defines the font family */
+    font-weight: bold; /* Sets the font weight to bold */
+    font-style: italic; /* Applies italic style to the font */
 }
