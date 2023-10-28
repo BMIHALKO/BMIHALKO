@@ -1,99 +1,96 @@
-/* Styling for the header element */
-.header{
-    background-color: rgb(57,57,65); /* Background color set to a shade of gray */
-    overflow: hidden; /* Overflow is hidden, which means content exceeding the container's boundaries will be clipped */
+/** Background Image **/
+body{
+    background-image: url(Images/Background-Image-R6.jpg); /* Setting the background image */
+    background-repeat: repeat-y; /* Image will repeat vertically */
+    background-size: 100%; /* Image will cover 100% of the container's width */
+    margin: 0%; /* No margin around the body */
+    font-family: R6S-Bold,sans-serif; /* Specifying primary and fallback font */
+    font-weight: 400; /* Normal font weight */
+    line-height: 1.5; /* Spacing between lines of text */
+    color: white; /* Default text color */
+    min-height: 100vh; /* Minimum height covers the full viewport height */
+    display: flexbox; /* Using the flexbox layout model */
+    flex-direction: column; /* Stacking child elements vertically */
 }
 
-/* Styling for the footer element */
-.footer{
-    background-color: rgb(57,57,65); /* Background color set to a shade of gray */
-    position: absolute; /* Positioning is set to absolute */
-    bottom: 0; /* Positioned at the bottom of its containing element */
-    width: 100%; /* Takes up the full width of its containing element */
-    height: 5rem; /* Height is set to 5 rem units */
+footer {
+    margin-top: auto; /* Push footer to the bottom in flexbox layout */
 }
 
-/* Styling for the page container */
-#page-container{
-    position: relative; /* Positioning set to relative */
-    min-height: 100vh; /* Minimum height is set to 100% of the viewport height */
+footer, ul {
+    width: 100%; /* Full width for footer and ul elements */
+    margin-bottom: 0%; /* No bottom margin */
 }
 
-/* Styling for the content wrap */
-#content-wrap{
-    padding-bottom: 5rem; /* Adds padding to the bottom to accommodate the footer's height */
+header {
+    position: relative; /* Set to relative, enabling absolute positioning inside it */
 }
 
-/* Styling for the navigation bar */
+header, ul {
+    width: 100%; /* Full width for header and ul elements */
+    margin-top: 0%; /* No top margin */
+}
+
+/** Navigation Bar **/
+
 nav {
-    padding-top: 0; /* Removes top padding from the nav element */
-    list-style-type: none; /* Removes the default list-style */
+    background-color: rgb(57, 57, 65); /* Set background color for navigation */
 }
 
-/* Styling for the list items within the navigation */
-nav ul li{
-    display: inline-block; /* Displays list items in a horizontal line */
-    padding-right: 25px; /* Adds right padding to separate list items */
+ul {
+    list-style-type: none; /* No bullet points for the list */
 }
 
-/* Styling for the logo element */
-#logo{
-    padding-right: 20px; /* Adds right padding to the logo element */
+nav ul li {
+    display: inline-block; /* List items in a row instead of column */
 }
 
-/* Styling for links within the "operators" element */
-#operators a{
-    text-decoration: none; /* Removes underlines from links */
-    font-size: 30px; /* Sets the font size to 30 pixels */
-    font-family: R6S-Bold,sans-serif; /* Defines the font family */
-    font-weight: bold; /* Sets the font weight to bold */
-    font-style: italic; /* Applies italic style to the font */
-    border-left: 3px solid black; /* Adds a left border to the links */
-    padding-top: 29px; /* Adds top padding */
-    padding-bottom: 18px; /* Adds bottom padding */
-    padding-left: 30px; /* Adds left padding */
-    color: white; /* Sets the text color to white */
+a {
+    display: inline-flex; /* Inline-flex to align items while keeping flow inline */
+    padding: 1rem; /* Padding around the links */
+    text-decoration: none; /* No underlines for links */
+    color: white; /* Link color */
+    font-size: 30px; /* Font size for links */
+    font-style: italic; /* Italic font style */
+    font-weight: bold; /* Bold font weight */
 }
 
-/* Styling for links within the "communityPage" element */
-#communityPage a{
-    text-decoration: none; /* Removes underlines from links */
-    font-size: 30px; /* Sets the font size to 30 pixels */
-    font-family: R6S-Bold,sans-serif; /* Defines the font family */
-    font-weight: bold; /* Sets the font weight to bold */
-    font-style: italic; /* Applies italic style to the font */
-    border-left: 3px solid black; /* Adds a left border to the links */
-    border-right: 3px solid black; /* Adds a right border to the links */
-    padding-top: 29px; /* Adds top padding */
-    padding-bottom: 18px; /* Adds bottom padding */
-    padding-right: 25px; /* Adds right padding */
-    padding-left: 30px; /* Adds left padding */
-    color: white; /* Sets the text color to white */
+.headerDiv nav ul li {
+    border-right: solid 2px black; /* Border on the right of list items */
 }
 
-/* Styling for links within the "Instagram" element */
-#Instagram a{
-    padding-right: 50px; /* Adds right padding to the Instagram links */
+#homePagelogo {
+    margin: 0%; /* No margin */
+    height: 82px; /* Set height */
+    padding-top: 10px; /* Padding at the top */
 }
 
-/* Styling for links within the "Twitter" element */
-#Twitter a{
-    padding-left: 10px; /* Adds left padding to the Twitter links */
+#operatorsPage {
+    padding-top: 10px; /* Padding at the top */
+    height: 82px; /* Set height */
+    position: absolute; /* Absolute positioning */
 }
 
-/* Styling for the "contact" element */
-#contact{
-    text-decoration: none; /* Removes underlines from links */
-    color: white; /* Sets the text color to white */
-    padding-left: 40px; /* Adds left padding */
+#communityPage {
+    padding-top: 10px; /* Padding at the top */
+    height: 82px; /* Set height */
+    position: absolute; /* Absolute positioning */
+    left: 27.3%; /* Horizontal positioning */
 }
 
-/* Styling for links within the "gameInfo" element */
-#gameInfo a{
-    padding-left: 800px; /* Adds a significant left padding to the game info links */
-    text-decoration: none; /* Removes underlines from links */
-    color: white; /* Sets the text color to white */
-    font-family: R6S-Bold, sans-serif; /* Defines the font family */
-    font-weight: bold; /* Sets the font weight to bold */
-    font-style: italic; /* Applies italic style to the font */
+#instagramLogo {
+    padding-right: 20px; /* Padding on the right side */
+}
+
+#twitterLogo {
+    padding-right: 20px; /* Padding on the right side */
+}
+
+#contact {
+    padding-left: 20px; /* Padding on the left side */
+}
+
+#gameInfo {
+    position: relative; /* Set to relative positioning */
+    left: 45%; /* Horizontal positioning */
 }
