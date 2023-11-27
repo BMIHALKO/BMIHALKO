@@ -51,6 +51,10 @@
             background-color: rgb(157, 157, 159, .46);
         }
 
+        #image-conatiner:hover{
+            transform: scale(1.2);
+        }
+
     </style>
 
 </head>
@@ -74,7 +78,7 @@
             <p style="margin-right: 69px;">Attackers</p>
             <p>Defenders</p>
         </div>
-        <div id="image-container">
+        <div id="image-container" onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)">
             <img src="Images/r6s-opertaor-list-ram.PNG" alt="Operator Ram" width="132" height="219">
             <img src="Images/r6s-operators-list-fenrir(2).png" alt="Fenrir" width="132" height="219">
             <img src="Images/r6-operators-list-brava(2).png" alt="Brava" width="132" height="219">
