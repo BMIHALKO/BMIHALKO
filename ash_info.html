@@ -229,7 +229,7 @@
             </div>
             <img style="margin-left: 80px;" src="Images/Ash_R6S_Half.png" alt="Half Ash" class="fixed-image">
             <div class="video-container">
-                <video width="396" height="223">
+                <video id="videoPlayer" width="396" height="223">
                     <source src="Images/Ash_Operator_Video.mp4" type="video/mp4">
                 </video>
                 <div style="padding-top: 10px; margin-right: 160px;">
@@ -327,6 +327,24 @@
                 </nav>
             </div>
         </footer>
+        <script>
+            var videoPlayer = document.getElementById('videoPlayer');
+        
+            // Auto play, half volume.
+            videoPlayer.play()
+            videoPlayer.volume = 0.1;
+        
+            // Play / pause.
+            videoPlayer.addEventListener('click', function () {
+                if (videoPlayer.paused == false) {
+                    videoPlayer.pause();
+                    videoPlayer.firstChild.nodeValue = 'Play';
+                } else {
+                    videoPlayer.play();
+                    videoPlayer.firstChild.nodeValue = 'Pause';
+                }
+            });
+        </script>
     </body>
 
 </html>
