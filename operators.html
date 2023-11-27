@@ -36,27 +36,45 @@
             padding-right: 20px;
         }
 
-        #image-container {
+        .image-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             max-width: 1133px; /* Adjust as needed */
             margin: 0 auto;
+            transition: transform 0.3s ease-in-out;
             
         }
 
-        #image-container img {
+        .image-container img {
             margin-bottom: 19px; /* Adjust as needed */
             margin-right: 1px;
             background-color: rgb(157, 157, 159, .46);
         }
 
-        #image-conatiner:hover{
+        .image-conatiner:hover{
             transform: scale(1.2);
+        }
+
+        .attacker {
+            display: none;
+        }
+
+        .defender {
+            display: none;
         }
 
     </style>
 
+    <script>
+        function enlargeCard(card) {
+            card.style.transform = "scale(1.2)"
+        }
+
+        function resetCardSize(card) {
+            card.style.transform = "scale(1)"
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -78,77 +96,77 @@
             <p style="margin-right: 69px;">Attackers</p>
             <p>Defenders</p>
         </div>
-        <div id="image-container" onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)">
-            <img src="Images/r6s-opertaor-list-ram.PNG" alt="Operator Ram" width="132" height="219">
-            <img src="Images/r6s-operators-list-fenrir(2).png" alt="Fenrir" width="132" height="219">
-            <img src="Images/r6-operators-list-brava(2).png" alt="Brava" width="132" height="219">
-            <img src="Images/r6s-operators-list-solis.png" alt="Solis" width="132" height="219">
-            <img src="Images/r6s-operators-list-grim.png" alt="Grim" width="132" height="219">
-            <img src="Images/r6s-operators-list-sens.png" alt="Sens" width="132" height="219">
-            <img src="Images/r6s-operators-list-azami.png" alt="Azami" width="132" height="219">
-            <img src="Images/r6s-operators-list-thorn.png" alt="Thorn" width="132" height="219">
-            <img src="Images/r6s-operators-list-osa.png" alt="Osa" width="132" height="219">
-            <img src="Images/r6s-operators-list-thunderbird.png" alt="Thunderbird" width="132" height="219">
-            <img src="Images/r6s-operators-list-flores.png" alt="Flores" width="132" height="219">
-            <img src="Images/r6s-operators-list-aruni.png" alt="Aruni" width="132" height="219">
-            <img src="Images/r6s-operator-list-zero.png" alt="Zero" width="132" height="219">
-            <img src="Images/r6s-operator-list-ace.png" alt="Ace" width="132" height="219">
-            <img src="Images/r6s-operator-list-melusi.png" alt="Melusi" width="132" height="219">
-            <img src="Images/r6s-operator-list-oryx.png" alt="Oryx" width="132" height="219">
-            <img src="Images/r6s-operator-list-iana.png" alt="Iana" width="132" height="219">
-            <img src="Images/r6-operators-list-wamai_358318.png" alt="Wamai" width="132" height="219">
-            <img src="Images/r6-operators-list-kali_358317.png" alt="Kali" width="132" height="219">
-            <img src="Images/r6-operators-list-amaru.png" alt="Amaru" width="132" height="219">
-            <img src="Images/r6-operators-list-goyo.png" alt="Goyo" width="132" height="219">
-            <img src="Images/r6-operators-list-nokk.png" alt="Nokk" width="132" height="219">
-            <img src="Images/r6-operators-list-warden.png" alt="Warden" width="132" height="219">
-            <img src="Images/r6-operators-list-mozzie_343537.png" alt="Mozzie" width="132" height="219">
-            <img src="Images/r6-operators-list-gridlock.png" alt="Thicklock" width="132" height="219">
-            <img src="Images/r6-operators-list-nomad.png" alt="Nomad" width="132" height="219">
-            <img src="Images/r6-operators-list-kaid.png" alt="Kaid" width="132" height="219">
-            <img src="Images/r6-operators-list-clash.png" alt="Clash" width="132" height="219">
-            <img src="Images/r6-operators-list-maverick.png" alt="Maverick" width="132" height="219">
-            <img src="Images/r6-operators-list-maestro.png" alt="Maestro" width="132" height="219">
-            <img src="Images/r6-operators-list-alibi.png" alt="Alibi" width="132" height="219">
-            <img src="Images/r6-operators-list-lion.png" alt="Lion" width="132" height="219">
-            <img src="Images/r6-operators-list-finka.png" alt="Finka" width="132" height="219">
-            <img src="Images/r6-operators-list-vigil.png" alt="Vigil" width="132" height="219">
-            <img src="Images/r6-operators-list-dokkaebi.png" alt="dokkaebi" width="132" height="219">
-            <img src="Images/r6-operators-list-zofia.png" alt="Zofia" width="132" height="219">
-            <img src="Images/r6-operators-list-ela.png" alt="Ela" width="132" height="219">
-            <img src="Images/r6-operators-list-ying.png" alt="Ying" width="132" height="219">
-            <img src="Images/r6-operators-list-lesion.png" alt="Lesion" width="132" height="219">
-            <img src="Images/r6-operators-list-mira.png" alt="Mira" width="132" height="219">
-            <img src="Images/r6-operators-list-jackal.png" alt="Jackal" width="132" height="219">
-            <img src="Images/r6-operators-list-hibana.png" alt="Hibana" width="132" height="219">
-            <img src="Images/r6-operators-list-echo.png" alt="Echo" width="132" height="219">
-            <img src="Images/r6-operators-list-caveira.png" alt="Caveira" width="132" height="219">
-            <img src="Images/r6-operators-list-capitao.png" alt="Capitao" width="132" height="219">
-            <img src="Images/r6-operators-list-blackbeard.png" alt="Blackbeard" width="132" height="219">
-            <img src="Images/r6-operators-list-valkyrie.png" alt="Valkyrie" width="132" height="219">
-            <img src="Images/r6-operators-list-buck.png" alt="Buck" width="132" height="219">
-            <img src="Images/r6-operators-list-frost.png" alt="Frost" width="132" height="219">
-            <img src="Images/r6-operators-list-mute.png" alt="Mute" width="132" height="219">
-            <img src="Images/r6-operators-list-sledge.png" alt="Sledge" width="132" height="219">
-            <img src="Images/r6-operators-list-smoke.png" alt="Smoke" width="132" height="219">
-            <img src="Images/r6-operators-list-thatcher.png" alt="Thatcher" width="132" height="219">
-            <a href="ash_info.html"><img src="Images/r6-operators-list-ash_317253.png" alt="Operator Ash" width="132" height="219"></a>
-            <img src="Images/r6-operators-list-castle.png" alt="Castle" width="132" height="219">
-            <img src="Images/r6-operators-list-pulse.png" alt="Pulse" width="132" height="219">
-            <img src="Images/r6-operators-list-thermite.png" alt="Thermite" width="132" height="219">
-            <img src="Images/r6-operators-list-montagne.png" alt="Montagne" width="132" height="219">
-            <img src="Images/r6-operators-list-twitch.png" alt="Twitch" width="132" height="219">
-            <img src="Images/r6-operators-list-doc.png" alt="Doc" width="132" height="219">
-            <img src="Images/r6-operators-list-rook.png" alt="Rook" width="132" height="219">
-            <img src="Images/r6-operators-list-jager.png" alt="Jager" width="132" height="219">
-            <img src="Images/r6-operators-list-bandit.png" alt="Bandit" width="132" height="219">
-            <img src="Images/r6-operators-list-blitz.png" alt="Blitz" width="132" height="219">
+        <div class="image-container">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-opertaor-list-ram.PNG" alt="Operator Ram" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-fenrir(2).png" alt="Fenrir" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-brava(2).png" alt="Brava" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-solis.png" alt="Solis" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-grim.png" alt="Grim" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-sens.png" alt="Sens" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-azami.png" alt="Azami" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-thorn.png" alt="Thorn" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-osa.png" alt="Osa" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-thunderbird.png" alt="Thunderbird" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-flores.png" alt="Flores" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operators-list-aruni.png" alt="Aruni" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operator-list-zero.png" alt="Zero" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operator-list-ace.png" alt="Ace" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operator-list-melusi.png" alt="Melusi" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operator-list-oryx.png" alt="Oryx" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6s-operator-list-iana.png" alt="Iana" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-wamai_358318.png" alt="Wamai" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-kali_358317.png" alt="Kali" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-amaru.png" alt="Amaru" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-goyo.png" alt="Goyo" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-nokk.png" alt="Nokk" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-warden.png" alt="Warden" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-mozzie_343537.png" alt="Mozzie" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-gridlock.png" alt="Thicklock" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-nomad.png" alt="Nomad" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-kaid.png" alt="Kaid" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-clash.png" alt="Clash" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-maverick.png" alt="Maverick" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-maestro.png" alt="Maestro" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-alibi.png" alt="Alibi" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-lion.png" alt="Lion" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-finka.png" alt="Finka" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-vigil.png" alt="Vigil" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-dokkaebi.png" alt="dokkaebi" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-zofia.png" alt="Zofia" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-ela.png" alt="Ela" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-ying.png" alt="Ying" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-lesion.png" alt="Lesion" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-mira.png" alt="Mira" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-jackal.png" alt="Jackal" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-hibana.png" alt="Hibana" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-echo.png" alt="Echo" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-caveira.png" alt="Caveira" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-capitao.png" alt="Capitao" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-blackbeard.png" alt="Blackbeard" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-valkyrie.png" alt="Valkyrie" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-buck.png" alt="Buck" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-frost.png" alt="Frost" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-mute.png" alt="Mute" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-sledge.png" alt="Sledge" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-smoke.png" alt="Smoke" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-thatcher.png" alt="Thatcher" width="132" height="219">
+            <a href="ash_info.html"><img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-ash_317253.png" alt="Operator Ash" width="132" height="219"></a>
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-castle.png" alt="Castle" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-pulse.png" alt="Pulse" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-thermite.png" alt="Thermite" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-montagne.png" alt="Montagne" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-twitch.png" alt="Twitch" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-doc.png" alt="Doc" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-rook.png" alt="Rook" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-jager.png" alt="Jager" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-bandit.png" alt="Bandit" width="132" height="219">
+            <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" src="Images/r6-operators-list-blitz.png" alt="Blitz" width="132" height="219">
             <div style="display: flex; margin-left: 215px;">
-                <img style="margin-right: 11px;" src="Images/r6-operators-list-iq.png" alt="IQ" width="132" height="219">
-                <img style="margin-right: 11px;" src="Images/r6-operators-list-fuze.png" alt="Fuze" width="132" height="219">
-                <img style="margin-right: 11px;" src="Images/r6-operators-list-glaz.png" alt="Glaz" width="132" height="219">
-                <img style="margin-right: 11px;" src="Images/r6s-operators-list-tachanka.png" alt="The Lord" width="132" height="219">
-                <img style="margin-right: 11px;" src="Images/r6-operators-list-kapkan.png" alt="Kapkan" width="132" height="219">
+                <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" style="margin-right: 11px;" src="Images/r6-operators-list-iq.png" alt="IQ" width="132" height="219">
+                <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" style="margin-right: 11px;" src="Images/r6-operators-list-fuze.png" alt="Fuze" width="132" height="219">
+                <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" style="margin-right: 11px;" src="Images/r6-operators-list-glaz.png" alt="Glaz" width="132" height="219">
+                <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" style="margin-right: 11px;" src="Images/r6s-operators-list-tachanka.png" alt="The Lord" width="132" height="219">
+                <img onmouseover="enlargeCard(this)" onmouseout="resetCardSize(this)" style="margin-right: 11px;" src="Images/r6-operators-list-kapkan.png" alt="Kapkan" width="132" height="219">
             </div>
         </div>
     </main>
