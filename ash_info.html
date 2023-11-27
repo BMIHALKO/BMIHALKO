@@ -9,6 +9,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Rainbow-Six.css" rel="stylesheet">
 
+    <style>
+            #operator_basic_info {
+            color: white;
+            background-color: rgb(57, 57, 65);
+            border-radius: 20px;
+            width: max-content;
+            height: max-content;
+            display: flex; /* Use flexbox layout */
+            justify-content: space-around; /* Adjust the space between items */
+            align-items: center; /* Align items vertically in the center */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+            padding: 20px; /* Adjust padding as needed */
+            font-size: 20px;
+            max-width: 544px;
+            max-height: 477px;
+            min-width: 544px;
+            max-height: 477px;
+            margin-top: 320px;
+            margin-left: 196px;
+        }
+
+        #operator_basic_info h2 {
+            margin: 0;
+        }
+
+        #operator_basic_info span {
+            display: inline-flex;
+        }
+    
+        #operator_basic_info img {
+            margin-right: 20px; /* Add margin to the right of the image for spacing */
+        }
+    
+        #operator_basic_info div {
+            flex-grow: 1; /* Allow the text to take remaining space */
+        }
+    
+        h2 {
+            margin-bottom: 0%;
+        }
+        .underline-attackers{
+            width: 385px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .underline-specialties{
+            width: 170px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .underline-health{
+            width: 143px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 10px 0; /* Add margin for spacing */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .underline-speed{
+            width: 138px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 10px 0; /* Add margin for spacing */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .underline-difficulty{
+            width: 181px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 10px 0; /* Add margin for spacing */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .underline-unique-ability {
+            width: 332px;
+            height: 1px;
+            background-color: black;
+            margin: 10px 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        /* Circle styles */
+        .circle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff; /* Circle color */
+            margin-right: 5px; /* Adjust the spacing between circles */
+        }
+        .no_circle {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff; /* Circle color */
+            opacity: 20%;
+            margin-right: 5px; /* Adjust the spacing between circles */
+        }
+
+        .fixed-image{
+            width: 960px;
+            height: 850px;
+            margin-top: 0;
+            position: absolute;
+            top: 360px;
+            left: 650px;
+            z-index: -1;
+        }
+
+        /* Styles for the video container div */
+        .video-container {
+            background-color: rgba(192, 192, 192, 0.9); /* White with 50% opacity */
+            height: 293px;
+            padding: 20px; /* Adjust padding as needed */
+            margin-bottom: 50px;
+        }
+        /* Video styles */
+        .video-container video {
+            width: 100%; /* Make the video fill the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove default inline styles */   
+            max-width: 396px; /* Set a maximum width for the video */
+            max-height: 223px; /* Set a maximum height for the video */
+            float: left;
+            padding-right: 40px;
+            padding-left: 252px;
+            padding-top: 38px;
+        }
+
+        .loadouts-margin {
+            margin-left: 150px;
+        }
+
+        .primary-loadout {
+            background-color: rgb(197, 197, 197, 0.83); 
+            width: 290px; 
+            height: 160px;
+            margin-left: 150px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .other-loadout {
+            background-color: rgb(197, 197, 197, 0.83); 
+            width: 290px; 
+            height: 160px;
+            margin-left: 29px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            font-style: italic; 
+        }
+
+        #h3-loadout {
+            background-color: rgb(57, 57, 65);
+            max-width: 220px;
+            min-width: 220px;
+            max-height: 39px;
+            max-height: 39px; 
+            display:flex; 
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .basic-play-info {
+            background-color: rgb(57, 57, 65);
+            margin-bottom: 44px;
+            height: 728px;
+            width: 556px;
+            max-height: inherit;
+            max-width: inherit;
+            margin-left: 500px;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -23,71 +212,107 @@
         </div>
     </header>
     <main>
-            <div style="color: white;">
-                <img src="Images/Ash_R6S_Half.png" alt="Ash Half Body" width="531" height="500">
-                <p>Attackers</p>
-                <p>Specialties</p>
-                <p>Soft Breach, Entry Frag</p>
-                <p>Health</p>
-                <p>Speed</p>
-                <p>Difficulty</p>
+            <div id="operator_basic_info">
+                <div>
+                    <h1 style="font-size: 50px; font-style: italic;"><img style="float: left;" src="Images/Y0R6_BADGE_Ash_L.png" alt="Ash Logo" width="111" height="115">Ash</h1>
+                    <h2 style="padding-top: 20px; margin-left: 27px;">Attacker</h2>
+                    <div class="underline-attackers"></div>
+                    <h2 style="padding-top: 10px; margin-left: 27px;;">Specialties</h2>
+                    <div class="underline-specialties"></div>
+                    <p style="margin-left: 27px;">Soft Breach, Entry Frag</p>
+                    <span id="">
+                        <h2 style="margin-left: 27px; padding-right: 17px ;">Health <div class="underline-health"></div><span class="circle"></span><span class="no_circle"></span><span class="no_circle"></span></h2>
+                        <h2 style="padding-right: 17px;">Speed <div class="underline-speed"></div><span class="circle"></span><span class="circle"></span><span class="circle"></span></h2>
+                        <h2>Difficulty <div class="underline-difficulty"></div><span class="circle"></span><span class="circle"></span><span class="no_circle"></span></h2>
+                    </span>
+                </div>
             </div>
-            <div style="color: white;">
+            <img src="Images/Ash_R6S_Half.png" alt="Half Ash" class="fixed-image">
+            <div class="video-container">
                 <video width="396" height="223">
                     <source src="Images/Ash_Operator_Video.mp4" type="video/mp4">
                 </video>
-                <h2>Unique Abiltiy</h2>
-                <p>Ash's unique ability can breach any soft wall or destructible surface from a distance. She is an entry frag operator who is grat at getting the first kill and solidifying early game map control</p>
+                <div style="padding-top: 10px; margin-right: 160px;">
+                    <h2 style="color: black; font-size: 30; font-style: italic; text-decoration: underline;">Unique ability</h2>
+                    <p style="color: black;font-size: 20px; word-wrap: break-word;">Ash's unique ability can breach any soft wall or destructible surface from a distance. She is an entry frag operator who is grat at getting the first kill and solidifying early game map control</p>
+                </div>
             </div>
             <div>
-                <h1 style="color: white;">LOADOUT</h1>
+                <h1 style="display: flex; justify-content: center; align-items: center; margin: 0; font-style: italic; font-size: 70px;">LOADOUT</h1>
             </div>
-            <div>
-                <h3 style="color: white;">Primary Weapon</h3>
-                <p>G36C</p>
-                <img src="Images/G36C.png" alt="G36C Assault Rifle" width="290" height="100">
-                <p>Assault Rifle</p>
-                <p>R4C</p>
-                <img src="Images/R4-C.png" alt="R4-C Assault Rifle" width="290" height="100">
-                <p>Assault Rifle</p>
-                <h3 style="color: white;">Secondary Weapon</h3>
-                <p>5.7 USG</p>
-                <img src="Images/5.7_USG.png" alt="5.7 Handgun" width="290" height="100">
-                <p>Handgun</p>
-                <p>M45 MEUSOC</p>
-                <img src="Images/M45_MEUSOC.png" alt="M45 Handgun" width="290" height="100">
-                <p>Handgun</p>
-                <h3 style="color: white;">GADGET</h3>
-                <p>Breach Charge</p>
-                <img src="Images/R6S_Breach_charge.png" alt="Breach Charge" width="290" height="100">
-                <p>Claymore</p>
-                <img src="Images/Claymore.png" alt="Claymore" width="290" height="100">
-                <h3 style="color: white;">Unique Abiltiy</h3>
-                <p>Breaching Rounds</p>
-                <img src="Images/Breaching-Rounds.png" alt="Breaching Rounds" width="290" height="100">
-            </div>
-            <div>
-                <img src="Images/r6s-operator-ash-elite.webp" alt="Ash Elite" width="247" height="215">
-                <p style="color: white;">How to Play Ash</p>
-                <img src="Images/Y0R6_BADGE_Ash_L.png" alt="Ash Logo" width="102" height="91">
-                <p style="color: white;">Role: Entry Fragger</p>
-                <p style="color: white;">Entry Fraggers are the first people to enter the building.
+            <div style="display: inline-flex; margin-top: 10px;">
+                <div>
+                    <h3 class="loadouts-margin" id="h3-loadout">Primary Weapon</h3>
+                    <div class="primary-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px;">G36C</p>
+                        <img src="Images/G36C.png" alt="G36C Assault Rifle" width="290" height="100">
+                        <p style="display: flex; justify-content: center; margin-top: 0px;">Assault Rifle</p>
+                    </div>
+                    <div class="primary-loadout" style="margin-top: 20px;">   
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px;">R4C</p>
+                        <img src="Images/R4-C.png" alt="R4-C Assault Rifle" width="290" height="100">
+                        <p style="display: flex; justify-content: center; margin-top: 0px;">Assault Rifle</p>
+                    </div>
+                </div>
+                <div>   
+                    <h3 style="margin-left: 29px;" id="h3-loadout">Secondary Weapon</h3>
+                    <div class="other-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px; margin-left: 0px;">5.7 USG</p>
+                        <img src="Images/5.7_USG.png" alt="5.7 Handgun" width="290" height="100">
+                        <p style="display: flex; justify-content: center; margin-top: 0px;">Handgun</p>
+                    </div>
+                    <div class="other-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px;">M45 MEUSOC</p>
+                        <img src="Images/M45_MEUSOC.png" alt="M45 Handgun" width="290" height="100">
+                        <p style="display: flex; justify-content: center; margin-top: 0px;">Handgun</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin-left: 29px;" id="h3-loadout">GADGET</h3>
+                    <div class="other-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px; margin-left: 0px;">Breach Charge</p>
+                        <img style="padding-top: 13px;" src="Images/R6S_Breach_charge.png" alt="Breach Charge" width="290" height="100">
+                    </div>
+                    <div class="other-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px;">Claymore</p>
+                        <img style="padding-top: 10px;" src="Images/Claymore.png" alt="Claymore" width="290" height="100">
+                    </div> 
+                </div>       
+                <div>    
+                    <h3 style="margin-left: 29px;" id="h3-loadout">Unique Abiltiy</h3>
+                    <div class="other-loadout">
+                        <p style="display: flex; justify-content: center; margin-bottom: 0px; padding-top: 5px; margin-left: 0px;">Breaching Rounds</p>
+                        <img style="padding-top: 10px;" src="Images/Breaching-Rounds.png" alt="Breaching Rounds" width="290" height="100">
+                    </div>
+                </div>
+            </div>    
+            <div class="basic-play-info" style="margin-bottom: 100px;">
+                <img style="float:left; margin-bottom: 0px;" src="Images/r6s-operator-ash-elite.webp" alt="Ash Elite" width="247" height="215">
+                <p style="font-size: 30px; font-style: italic; font-weight: bold; padding-top: 58px; margin-bottom: 14.6px; text-decoration: underline;">How to Play Ash</p>
+                <img style="margin-bottom: 0px;" src="Images/Y0R6_BADGE_Ash_L.png" alt="Ash Logo" width="102" height="91">
+                <p style="background-color: rgb(217, 217, 217, .43); margin-bottom: 0px;
+                margin-top: 0px; color: rgb(0, 0, 0, .67);"><span style= "font-size: 30px; font-weight: bold; font-style: italic; margin-left: 78px;">Role:</span><span style="font-size: 20px; margin-left: 15px;">Entry Fragger</span></p>
+                <p style="margin-left: 78px; margin-right: 74px; margin-top: 5px; font-size: 15px; width: 400px; height: 230px;">Entry Fraggers are the first people to enter the building.
                     This role assignment means that you will be trying to clear out roamers and gain map control for the rest of your team. Hunting these roamers allows your team to attack the object site much easier without having to worry about people flanking you. The same goes for map control, allowing your team to have map control means that you can easily start you execute on site allowing you to either plant the “bomb” or kill the rest of the enemy team.
                     As the teams fragger you are meant to be taking gun fights. You need to be decisive and not afraid to take on a challenge.</p>
-                <p style="color: white;">Why Play Ash?</p>
-                    <ul style="color: white;">
-                        <li>Versatile weapons</li>
-                        <li>Very Fast (3 - speed)</li>
-                        <li>Loadout compliments aggressive playstyle</li>
-                        <li>Able to breach all destructible surfaces from range</li>
-                    </ul>
-                <p style="color: white;">What's Needed to play Ash</p>
-                    <ul style="color: white;">
-                        <li>Excellent Map knowledge</li>
-                        <li>Good mechanical skill</li>
-                        <li>Fast reflexes</li>
-                        <li>Good game sense</li>
-                    </ul>
+                <div style="float: left; font-size: 15px; margin-right: 10px;">
+                    <p style="margin-left: 82px; margin-top: 15px; margin-bottom: 2px; text-decoration: underline;">Why Play Ash?</p>
+                        <ul style="margin-left: 65px; margin-top: 0px; width: 180px; word-wrap: break-word;">
+                            <li>Versatile weapons</li>
+                            <li>Very Fast (3 - speed)</li>
+                            <li>Loadout compliments aggressive playstyle</li>
+                            <li>Able to breach all destructible surfaces from range</li>
+                        </ul>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0; margin-top: 30px; text-decoration: underline;">What's Needed to play Ash</p>
+                        <ul style="margin-top: 2px; margin-left: 280px;">
+                            <li>Excellent Map knowledge</li>
+                            <li>Good mechanical skill</li>
+                            <li>Fast reflexes</li>
+                            <li>Good game sense</li>
+                        </ul>
+                </div>
             </div>
         </main>
         <footer>

@@ -9,6 +9,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Rainbow-Six.css" rel="stylesheet">
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select the form
+            var form = document.getElementById("commentForm");
+
+            // Add an event listener to the form
+            form.addEventListener("keydown", function (event) {
+                // Check if the Enter key is pressed (key code 13)
+                if (event.keyCode === 13) {
+                    // Prevent the default form submission
+                    event.preventDefault();
+
+                    // Trigger the form submission
+                    form.submit();
+                }
+            });
+        });
+    </script>
+
+    <style>
+        main {
+            background-color: white;
+            width: 680px;
+            height: 265px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 437px;
+            margin-top: 153px;
+        }
+
+        .new-comment {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            padding-left: 14px;
+            box-shadow: 0 1px 10px;
+        }
+
+        .name {
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 17px;
+            font-style: italic;
+        }
+
+        .comment {
+            display: flex;
+            justify-content: center;
+            color: black; 
+            font-weight: bold;
+            font-style: italic;
+        }
+
+    </style>
+
+
 </head>
 <body>
     <header>
@@ -23,19 +82,17 @@
         </div>
     </header>
     <main>
-            <form  action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
-                <p>New Comment</p>
-                <div>
-                    <label for="userName">Name:</label>
-                    <textarea id="userName" name="userName" placeholder="Enter Username" rows="1" cols="50"></textarea>
+            <form id="commentForm" action="comments.php" method="POST">
+                <p style="color: black; font-size: 30px; font-weight: bold; font-style: italic; padding-left: 14px; box-shadow: 0 1px 10px;">New Comment</p>
+                <div class="name">
+                    <label style="margin-right: 96px; font-size: 30px;" for="userName">Name:</label>
+                    <textarea style="font-size: 23px; margin-top: 5px;" id="userName" name="userName" placeholder="Enter Username . . ." rows="1" cols="30"></textarea>
                 </div>
-                <div>
-                    <label for="userComment">Comment:</label>
-                    <textarea id="userComment" name="userComment" placeholder="Enter New Comment" rows="7" cols="50"></textarea>
+                <div class="comment">
+                    <label style="margin-right: 40px; font-size: 30px;" for="userComment">Comment:</label>
+                    <textarea style="font-size: 23px;" id="userComment" name="userComment" placeholder="Enter New Comment . . ." rows="3" cols="30"></textarea>
                 </div>
-                <div>
-                    <input type="submit" value="submit">
-                </div>
+                <input type="submit" value="Submit Comment">
             </form>
         </main>
         <footer>

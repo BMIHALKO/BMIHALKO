@@ -9,6 +9,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Rainbow-Six.css" rel="stylesheet">
 
+    <style>
+        #operators {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(36,153,255);
+            border-radius: 10px;
+            max-width: 350px;
+            min-width: 350px;
+            max-height: 85px;
+            min-height: 85px;
+            font-size: 60px;
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        p, div main {
+            background-color: rgb(36,153,255);
+            font-size: 40px;
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1133px; /* Adjust as needed */
+            margin: 0 auto;
+            
+        }
+
+        #image-container img {
+            margin-bottom: 19px; /* Adjust as needed */
+            margin-right: 1px;
+            background-color: rgb(157, 157, 159, .46);
+        }
+
+    </style>
+
 </head>
 <body>
     <header>
@@ -23,10 +67,14 @@
         </div>
     </header>
     <main>
-        <p>Operators</p>
-        <p>Attackers</p>
-        <p>Defenders</p>
-        <div>
+        <div style="display: flex; justify-content: center;">
+            <p id="operators">OPERATORS</p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <p style="margin-right: 69px;">Attackers</p>
+            <p>Defenders</p>
+        </div>
+        <div id="image-container">
             <img src="Images/r6s-opertaor-list-ram.PNG" alt="Operator Ram" width="132" height="219">
             <img src="Images/r6s-operators-list-fenrir(2).png" alt="Fenrir" width="132" height="219">
             <img src="Images/r6-operators-list-brava(2).png" alt="Brava" width="132" height="219">
@@ -91,11 +139,13 @@
             <img src="Images/r6-operators-list-jager.png" alt="Jager" width="132" height="219">
             <img src="Images/r6-operators-list-bandit.png" alt="Bandit" width="132" height="219">
             <img src="Images/r6-operators-list-blitz.png" alt="Blitz" width="132" height="219">
-            <img src="Images/r6-operators-list-iq.png" alt="IQ" width="132" height="219">
-            <img src="Images/r6-operators-list-fuze.png" alt="Fuze" width="132" height="219">
-            <img src="Images/r6-operators-list-glaz.png" alt="Glaz" width="132" height="219">
-            <img src="Images/r6s-operators-list-tachanka.png" alt="The Lord" width="132" height="219">
-            <img src="Images/r6-operators-list-kapkan.png" alt="Kapkan" width="132" height="219">
+            <div style="display: flex; margin-left: 215px;">
+                <img style="margin-right: 11px;" src="Images/r6-operators-list-iq.png" alt="IQ" width="132" height="219">
+                <img style="margin-right: 11px;" src="Images/r6-operators-list-fuze.png" alt="Fuze" width="132" height="219">
+                <img style="margin-right: 11px;" src="Images/r6-operators-list-glaz.png" alt="Glaz" width="132" height="219">
+                <img style="margin-right: 11px;" src="Images/r6s-operators-list-tachanka.png" alt="The Lord" width="132" height="219">
+                <img style="margin-right: 11px;" src="Images/r6-operators-list-kapkan.png" alt="Kapkan" width="132" height="219">
+            </div>
         </div>
     </main>
     <footer style="background-color: rgb(57, 57, 65); margin: 0;">

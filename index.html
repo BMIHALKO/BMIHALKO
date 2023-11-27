@@ -11,6 +11,64 @@
 
 </head>
 <body>
+    <style>
+        .all-margin {
+            margin-left: 359px;
+        }
+
+        h4, div main {
+            background-color:  rgb(57, 57, 65);
+            display: flex;
+            margin-top: 215px;
+            border-radius: 10px;
+            max-width: 588px;
+            max-height: 48px;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, div main {
+            background-color: rgb(57, 57, 65);
+            display: flex;
+            border-radius: 10px;
+            max-width: 871px;
+            font-size: 60px;
+            max-height: 178px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 0px;
+        }
+
+        .welcome-message {
+            margin-left: 691px;
+            background-color: rgb(57, 57, 65);
+            border-radius: 10px;
+            max-width: 656px;
+            height: 328px;
+            max-height: 328px;
+        }
+
+        .underline-welcome{
+            display: flex;
+            max-width: 540px; /* Set the length of the line */
+            height: 1px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin-top: 0%;
+            margin-left: 52px;
+        }
+
+        #welcome-message-to-portal {
+            display: flex;
+            text-align: center;
+            width: 519px;
+            font-size: 20px;
+            margin-left: 68px;
+            margin-right: 68px;
+        }
+
+    </style>
     <header>
         <div class="headerDiv">
             <nav>
@@ -24,15 +82,16 @@
     </header>
     <main>
         <div>
-            <h4>Unofficial Operator Portal Dedicated to Rainbow Six Siege</h4>
+            <h4 class="all-margin" style="font-size: 20px;">Unofficial Operator Portal Dedicated to Rainbow Six Siege</h4>
         </div>
         <div>
-            <h1>Rainbow Six Siege Operator Guides</h1>
+            <h1 class="all-margin" style="margin-top: 50px;">Rainbow Six Siege Operator Guides</h1>
         </div>
-        <div>
-            <h2>Welcome to My Portal</h2>
-            <p>This portal has been made by a player for players. My goal is to offer more insight into each operator and how to play to play them as you get more involved into the game.</p>
-            <p>I hope to help new players understand what each opereator is capable of, and what their full potential can be.</p>
+        <div class="welcome-message" style="margin-bottom: 123px; margin-top: 218px;">
+            <h2 style="display: flex; justify-content: center; font-size: 40px; margin-bottom: 0%; padding-top: 37px;">Welcome to My Portal</h2>
+            <p class="underline-welcome"></p>
+            <p id="welcome-message-to-portal">This portal has been made by a player for players. My goal is to offer more insight into each operator and how to play them as you get more involved into the game.</p>
+            <p id="welcome-message-to-portal">I hope to help new players understand what each operator does and what their potential can be with each operator.</p>
         </div>
     </main>
     <footer>
