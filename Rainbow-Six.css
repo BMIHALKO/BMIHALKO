@@ -1,3 +1,7 @@
+* {
+    font-family: R6S-Bold,sans-serif;  
+}
+
 /** Background Image **/
 body{
     background-image: url(Images/Background-Image-R6.jpg); /* Setting the background image */
@@ -35,17 +39,15 @@ header, ul {
 
 nav {
     background-color: rgb(57, 57, 65); /* Set background color for navigation */
-}
-
-ul {
-    list-style-type: none; /* No bullet points for the list */
+    max-height: 120px;
+    min-height: 94px;
 }
 
 nav ul li {
-    display: inline-block; /* List items in a row instead of column */
+    display: inline-flex; /* List items in a row instead of column */
 }
 
-a {
+nav a {
     display: inline-flex; /* Inline-flex to align items while keeping flow inline */
     padding: 1rem; /* Padding around the links */
     text-decoration: none; /* No underlines for links */
@@ -60,22 +62,30 @@ a {
 }
 
 #homePagelogo {
-    margin: 0%; /* No margin */
+    margin-top: 0%; /* No margin */
     height: 82px; /* Set height */
     padding-top: 10px; /* Padding at the top */
+    padding-bottom: 2px;
+    padding-right: 5px;
 }
 
 #operatorsPage {
-    padding-top: 10px; /* Padding at the top */
-    height: 82px; /* Set height */
-    position: absolute; /* Absolute positioning */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 17px;
+    padding-right: 5px;
 }
 
 #communityPage {
-    padding-top: 10px; /* Padding at the top */
-    height: 82px; /* Set height */
-    position: absolute; /* Absolute positioning */
-    left: 25%; /* Horizontal positioning */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    padding-top: 17px;
+    padding-right: 5px;
 }
 
 #instagramLogo {
@@ -88,9 +98,11 @@ a {
 
 #contact {
     padding-left: 20px; /* Padding on the left side */
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #gameInfo {
     position: relative; /* Set to relative positioning */
-    left: 45%; /* Horizontal positioning */
+    left: 500px; /* Horizontal positioning */
 }
