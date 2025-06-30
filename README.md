@@ -26,6 +26,7 @@ This backend only API simulates a basic social media platform. It manages user a
 - Data persistence using H2 in-memory relational database
 - Developed and deployed in a Gitpod cloud-based IDE environment
 
+**🔗 Repository:** [github.com/BMIHALKO/BMIHALKO-pep-project](https://github.com/BMIHALKO/BMIHALKO-pep-project)
 ---
 
 ### 🌐 Spring Social Media Blog API
@@ -42,6 +43,7 @@ This project builds upon the previous Social Media Blog API by leveraging the Sp
 - Data persistence with H2 database for easy setup and testing
 - Developed and deployed in a Gitpod cloud-based IDE environment
 
+**🔗 Repository:** [github.com/BMIHALKO/BMIHALKO-pep-spring-project](https://github.com/BMIHALKO/BMIHALKO-pep-spring-project)
   ---
 
   ## 🔗 Let's Connect
