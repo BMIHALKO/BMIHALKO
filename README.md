@@ -4,7 +4,7 @@
 I'm a software developer with a Bachelor's degree in Integrated Information Technology from the University of South Carolina. I have experince in Java, Python, HTML, CSS, NoSQL databases (Firebase Firestore), and software design through academic projects and internships.
 
 ## Skills
-- **Languages**: Java, Python, JavaScript, SQL, HTML, CSS
+- **Languages**: Java, Python, JavaScript, SQL, HTML, CSS, C++
 - **Framework**: Spring Boot, RESTful APIs, JDBC
 - **Databases**: Firebase Firestore (NoSQL), H2 (in-memory relational database)
 - **Tools**: Git, GitHub, Gitpod
